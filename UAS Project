@@ -21,6 +21,7 @@ cv.createTrackbar("sat min", "trackbar", 111, 255, empty)
 cv.createTrackbar("sat max", "trackbar", 223, 255, empty)
 cv.createTrackbar("val min", "trackbar", 167, 255, empty)
 cv.createTrackbar("val max", "trackbar", 255, 255, empty)
+##############################################################################
 #main loop
 while True:
     ret,frame = cap.read()  #reads the frames from video capture
@@ -86,6 +87,6 @@ while True:
 
     if cv.waitKey(1) & 0xFF == ord('q'): #waitkey(1) is frame rate 1 fpms, when pressed q program exits
         break
-
+###################################################################################################
 cap.release()
 cv.destroyAllWindows()
