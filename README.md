@@ -1,7 +1,7 @@
 # Red-Arrow
 Detects Red Arrow and finds its angle with the verticle. Made by using Opencv in python.
 Made this project by using:-
-1. Detecting only red colour using a trackbar. Then used mask. (inRange and bitwaise_and)
+1. Detecting only red colour using a trackbar (Of Hue Saturation and Value). Then used mask. (inRange and bitwaise_and)
 2. When the red colour is detected, i used findcontour() to get the boundary of detected red colour.
 3. Used HoughLinesP() to detect only straight lines.
 4. When a straight line is detected the program runs forward and then i use approxPolyDP() to approximate the end points of detected object 
